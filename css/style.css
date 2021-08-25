@@ -1,12 +1,23 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Allison&display=swap');
 
 body{
-    background-color: #AAAAAA;
-    margin: 0;
+    background-color: #613800;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    
 }
 
-/*Esse é um comentário CSS*/
+.container-fluid{
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.escrita-mao{
+    font-family: 'Allison', cursive;
+    text-shadow: #000 2px 2px;
+}
+
+/*Esse é um comentário CSS
 h1{
     font-family: 'Roboto Slab', serif;
     font-size: 52px;
@@ -61,7 +72,7 @@ h2{
     font-weight: bold;
     text-align: center;
 }
-/* Código substituido pelo Bootstrap
+Código substituido pelo Bootstrap
 nav ul{
     list-style-type: none;
     margin: 0;
@@ -95,11 +106,11 @@ nav ul li a:hover{
     color: #000000;
     background-color: #EDB469;
 }
-*/
+
 footer{
     text-align: center;
     padding-top: 100px;
     height: 200px;
     background-color: #613800;
     color: #FFFFFF;
-}
+}*/
