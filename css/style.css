@@ -3,6 +3,7 @@
 body{
     background-color: #AAAAAA;
     margin: 0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 /*Esse é um comentário CSS*/
@@ -60,7 +61,7 @@ h2{
     font-weight: bold;
     text-align: center;
 }
-
+/* Código substituido pelo Bootstrap
 nav ul{
     list-style-type: none;
     margin: 0;
@@ -94,7 +95,7 @@ nav ul li a:hover{
     color: #000000;
     background-color: #EDB469;
 }
-
+*/
 footer{
     text-align: center;
     padding-top: 100px;
