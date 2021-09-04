@@ -9,56 +9,68 @@
     </head>
     <body>
         <header class="container-fluid">
-          <div id="carousel" class="carousel slide" data-bs-ride="carousel">
-            <div class="carousel-inner">
-              <div class="carousel-item active">
-                <img src="img/livraria_banner_1920x600.jpg" class="d-block w-100" alt="Mulher na Academia Firme&Forte">
+            <div id="carousel" class="carousel slide" data-bs-ride="carousel">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="img/livraria_banner_1920x600.jpg" class="d-block w-100" alt="Mãos com livro aberto">
+                  <div class="carousel-caption d-none d-md-block">
+                    <h1 class="escrita-mao mb-5" style="font-size: 8em;">Livraria Traça Livros</h1>
+                  </div>
+                </div>
               </div>
             </div>
-        </div>
-        </header>
-        <nav class="navbar navbar-expand-lg navbar-light bg-warning sticky-top p-3">
-          <div class="container-fluid">
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
-              <a class="navbar-brand" href="#">Traças Livros</a>
-              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                <li class="nav-item">
-                  <a class="nav-link" aria-current="page" href="index.html">Home</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="index.html#quemsomos">Quem Somos</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="index.html#quemsomos">Clube da Traça</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="index.html#contato">Contato</a>
-                </li>
-              </ul>
+          </header>
+          <nav class="navbar navbar-expand-lg navbar-light bg-warning sticky-top p-3">
+            <div class="container-fluid">
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggler"
+                aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarToggler">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#quemsomos">Quem Somos</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#clubetraca">Clube da Traça</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#contato">Contato</a>
+                  </li>
+                </ul>
+                <form class="d-flex" action="acesso-clube.html">
+                  <button class="btn btn-outline-dark" type="submit">Acesso Clube</button>
+                </form>
+              </div>
             </div>
-          </div>
-        </nav>
+          </nav>
             <main class="container-fluid">
                 <section class="row mx-5 mt-3 p-3 mb-3 bg-white rounded">
                     <form action="#" method="get">
+                        <div class="col m-4">
+                            <p class="text-center">Cadastre-se no clube da traça e todo mês você receberá, em sua casa, 
+                                um exemplar à sua escolha e juntamente com seu grupo de leitura desfrutar de muitas
+                                trocas de experiências e conhecimentos.
+                            </p>
+                        </div>
                         <h4 class="mb-3">Dados Pessoais</h4>
                         <div class="col mb-3">
                             <label for="nome" class="form-label">Nome Completo:</label>
                             <input type="text" class="form-control" id="nome" name="nome" placeholder="Digite o nome completo" required>
                         </div>
                         <div class="row mb-3">
-                            <div class="col-4 col-lg-4 col-md-12 col-sm-12 mb-3">
+                            <div class="col-12 col-lg-4 col-md-12 col-sm-12 mb-3">
                                 <label for="cpf" class="form-label">CPF:</label>
                                 <input type="text" class="form-control" id="cpf" name="cpf" maxlength="11" placeholder="Somente números" required> 
                             </div>
-                            <div class="col-4 col-lg-4 col-md-12 col-sm-12 mb-3">
+                            <div class="col-12 col-lg-4 col-md-12 col-sm-12 mb-3">
                                 <label for="nascimento" class="form-label">Data de Nascimento:</label>
                                 <input type="date" class="form-control" id="nascimento" name="nascimento" required>
                             </div>
-                            <div class="col-4 col-lg-4 col-md-12 col-sm-12 mb-3">
+                            <div class="col-12 col-lg-4 col-md-12 col-sm-12 mb-3">
                                 <label for="sexo" class="form-label">Sexo:</label>
                                 <select class="form-select" id="sexo" name="sexo" required>
                                     <option value="0" selected>Selecione uma opção</option>
@@ -166,9 +178,36 @@
                     </form>
                 </section>
             </main>
-        <footer>
-            <h6>Livraria Traça Livros&copy;2021</h6>
-        </footer>
+            <footer class="container-fluid">
+                <div class="row text-white bg-dark pt-5 pb-5 m-auto">
+                  <div class="col-lg-4 col-sm-12">
+                    <h4>Livraria Traça Livros</h4>
+                    <small><em>A sua melhor companhia</em></small>
+                    <ul class="list-group list-group-flush text-dark">
+                      <li class="list-group-item"><a href="#" class="text-decoration-none">Quem Somos</a></li>
+                      <li class="list-group-item"><a href="#" class="text-decoration-none">Clube da Traça</a></li>
+                      <li class="list-group-item"><a href="#" class="text-decoration-none">Cadastre-se</a></li>
+                      <li class="list-group-item"><a href="#" class="text-decoration-none">Contato</a></li>
+                      <li class="list-group-item"><a href="#" class="text-decoration-none">Login</a></li>
+                    </ul>
+                  </div>
+                  <div class="col-lg-4 col-sm-12">
+                    <p class="pt-5" style="text-align: justify;">A livraria Traça Livros está sempre de portas 
+                      abertas te receber. Faça parte do clube 
+                      de leitura. O clube proporciona uma ótima oportunidade mensal de receber novos Livros
+                      e ser estimulado por um grupo ávido de leitores iniciantes ou veteranos.
+                    </p>
+                  </div>
+                  <div class="col-lg-4 col-sm-12">
+                    <p class="pt-5" style="text-align: justify;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore eligendi aliquid recusandae dolore quas qui
+                      voluptatibus esse libero quasi commodi quisquam laborum quidem sit illo, necessitatibus possimus quam quaerat animi?
+                    </p>
+                  </div>
+                </div>
+              </footer>
+              <div class="bg-warning text-center p-1">
+                <h6 class="small">Livraria Traça Livros&copy; 2021 | Prof&deg; Ruben Prado</h6>
+              </div>
         <script src="js/valida-form.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
     </body>
