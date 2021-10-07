@@ -130,7 +130,7 @@ btnEnviar.addEventListener('click',function(){
 })
 
 function exibeAlertaTermo() {
-    if(!termoPriv.checked && senha.validity.valid){
+    if(!termoPriv.checked){
         alert('Você precisa aceitar os Termos de Privacidade, antes de prosseguir.');
     }
 }
@@ -156,3 +156,17 @@ function mostraSenha(input) {
        senha.senha2.type = 'password';
    }    
 }
+
+/* senha.senha1.addEventListener('blur',()=>{
+    var expSenha = /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[a-zA-Z]).{8,}$/g;
+    var senhaValida = expSenha.exec(senha.senha1.value);
+    var msgSenha = '';
+
+    if(senhaValida){
+        msgSenha = 'Senha precisa ter 1 letra Maiúscula, 1 letra Minuscula, 1 número e um caracter especial'
+        console.log('eu');
+    }
+
+    senha.senha1.setCustomValidity(msgSenha);
+
+}) */
