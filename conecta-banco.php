@@ -17,8 +17,15 @@ function verifica_login($conexao, $login){
 }
 
 function verifica_senha($conexao, $senha, $login){
-    $sqlConfere = "SELECT senha FROM cliente WHERE email = '{$login}' AND senha = '{$senha}'";
+    $sqlConfere = "SELECT senha, cpf_cliente FROM cliente WHERE email = '{$login}' AND senha = '{$senha}'";
     $resultado = mysqli_query($conexao,$sqlConfere);
+
+    return mysqli_fetch_assoc($resultado);
+}
+
+function busca_cliente($conexao, $cpf){
+    $sqlBusca = "SELECT * FROM cliente WHERE cpf_cliente = {$cpf}";
+    $resultado = mysqli_query($conexao,$sqlBusca);
 
     return mysqli_fetch_assoc($resultado);
 }

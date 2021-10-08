@@ -32,6 +32,7 @@
         if($login && $senha){
             $_SESSION['usuario'] = $_POST['login'];
             $_SESSION['autenticado'] = true;
+            $_SESSION['cpf'] = $senha['cpf_cliente'];
             header('Location: dashboard.php');
             die();
         }
