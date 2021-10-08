@@ -92,3 +92,18 @@ function mostra_estado($uf)
             break;
     }
 }
+
+function mostra_telefone($telefone){
+    $padrao = '/([0-9]{2})+([0-9]{4,5})+([0-9]{4})/';
+    $verifica = preg_match($padrao,$telefone);
+
+    if(!$verifica){
+        return $telefone;
+    }
+
+    $telPartido = preg_split($padrao,$telefone,-1,PREG_SPLIT_DELIM_CAPTURE);
+
+
+    return '('.$telPartido[1].') '.$telPartido[2].'-'.$telPartido[3];
+
+}

@@ -30,7 +30,7 @@ $cliente = busca_cliente($conexao, $_SESSION['cpf']);
     </div>
     <div class="col-12 col-lg-3 col-md-12 col-sm-12 mb-2">
         <h6>Telefone:</h6>
-        <p class="text-primary"><?php echo $cliente['telefone_cliente']; ?></p>
+        <p class="text-primary"><?php echo mostra_telefone($cliente['telefone_cliente']); ?></p>
     </div>
 </div>
 <h4 class="mb-2">Endereço</h4>
