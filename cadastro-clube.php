@@ -1,52 +1,14 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
-        <link rel="stylesheet" href="css/style.css">
-        <title>Livraria Traça Livros</title>
-    </head>
-    <body>
-        <header class="container-fluid">
-            <div id="carousel" class="carousel slide" data-bs-ride="carousel">
-              <div class="carousel-inner">
-                <div class="carousel-item active">
-                  <img src="img/livraria_banner_1920x600.jpg" class="d-block w-100" alt="Mãos com livro aberto">
-                  <div class="carousel-caption d-none d-md-block">
-                    <h1 class="escrita-mao mb-5" style="font-size: 8em;">Livraria Traça Livros</h1>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </header>
-          <nav class="navbar navbar-expand-lg navbar-light bg-warning sticky-top p-3">
-            <div class="container-fluid">
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggler"
-                aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse" id="navbarToggler">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                  <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">Home</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#quemsomos">Quem Somos</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#clubetraca">Clube da Traça</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#contato">Contato</a>
-                  </li>
-                </ul>
-                <form class="d-flex" action="acesso-clube.html">
-                  <button class="btn btn-outline-dark" type="submit">Acesso Clube</button>
-                </form>
-              </div>
-            </div>
-          </nav>
+  <?php
+  include 'cabecalho.php';
+  ?>
+  
+  <body>
+    <?php
+      include 'header.php';
+      include 'nav.php';
+    ?>
             <main class="container-fluid">
                 <section class="row mx-5 mt-3 p-3 mb-3 bg-white rounded">
                     <form action="cadastro-cliente.php" method="post">
