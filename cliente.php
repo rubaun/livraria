@@ -12,7 +12,7 @@ $cliente = busca_cliente($conexao, $_SESSION['cpf']);
 <div class="row mb-2">
     <div class="col-12 col-lg-12 col-md-12 col-sm-12 mb-2">
         <h6>CPF:</h6>
-        <p class="text-primary"><?php echo $cliente['cpf_cliente']; ?></p>
+        <p class="text-primary"><?php echo mostra_cpf($cliente['cpf_cliente']); ?></p>
     </div>
     <div class="col-12 col-lg-3 col-md-12 col-sm-12 mb-2">
         <h6>Data de Nascimento:</h6>

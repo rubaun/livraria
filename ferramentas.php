@@ -115,3 +115,16 @@ function verifica_senha_cadastro($senha1,$senha2){
 
     return false;
 }
+
+function mostra_cpf($cpf){
+    $padrao = '/([0-9]{3})([0-9]{3})([0-9]{3})([0-9]{2})/';
+    $verifica = preg_match($padrao,$cpf);
+
+    if(!$verifica){
+        return $cpf;
+    }
+
+    $cpfPartido = preg_split($padrao,$cpf,-1,PREG_SPLIT_DELIM_CAPTURE);
+
+    return $cpfPartido[1].'.'.$cpfPartido[2].'.'.$cpfPartido[3].'-'.$cpfPartido[4];
+}
