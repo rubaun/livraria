@@ -107,3 +107,11 @@ function mostra_telefone($telefone){
     return '('.$telPartido[1].') '.$telPartido[2].'-'.$telPartido[3];
 
 }
+
+function verifica_senha_cadastro($senha1,$senha2){
+    if($senha1 === $senha2){
+        return true;
+    }
+
+    return false;
+}

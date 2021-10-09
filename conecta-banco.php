@@ -16,6 +16,13 @@ function verifica_login($conexao, $login){
 
 }
 
+function verifica_cpf($conexao,$cpf){
+    $sqlConfere = "SELECT cpf_cliente FROM cliente WHERE cpf_cliente = '{$cpf}'";
+    $resultado = mysqli_query($conexao,$sqlConfere);
+
+    return mysqli_fetch_assoc($resultado);
+}
+
 function verifica_senha($conexao, $senha, $login){
     $sqlConfere = "SELECT senha, cpf_cliente FROM cliente WHERE email = '{$login}' AND senha = '{$senha}'";
     $resultado = mysqli_query($conexao,$sqlConfere);

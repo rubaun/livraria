@@ -25,7 +25,7 @@ include 'cabecalho.php';
       </div>
       <div>
         <br id="clubetraca">
-        <a href="cadastro-clube.html" class="btn btn-warning btn-lg m-5">Conheça o Clube da Traça</a>
+        <a href="cadastro-clube.php" class="btn btn-warning btn-lg m-5">Conheça o Clube da Traça</a>
       </div>
     </section>
     <section class="row justify-content-center text-center mb-5">
@@ -43,7 +43,7 @@ include 'cabecalho.php';
                 nunca teve aula sobre dinheiro, investimentos, juros etc.
               </p>
                </div>
-               <a href="cadastro-clube.html" class="btn btn-warning">Receber</a>
+               <a href="cadastro-clube.php" class="btn btn-warning">Receber</a>
           </div>
         </div>
         <div class="col">
